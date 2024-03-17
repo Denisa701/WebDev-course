@@ -1,0 +1,20 @@
+#fname{
+    background-color: rgba(53, 140, 253, 0.468);
+}
+
+#lname{
+    background-color: rgba(31, 192, 192, 0.21);
+}
+
+#facultate{
+    background-color: rgba(70, 105, 193, 0.26);
+    
+}
+
+.fieldset_style{
+    background-color: antiquewhite;
+    border-color: brown;
+    width: 60%;
+    margin-left: 20%;
+}
+
