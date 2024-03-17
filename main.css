@@ -1,0 +1,135 @@
+body {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	height: 100%;
+}
+
+.stopwatch {
+	display: flex;
+	margin-left: 20rem;
+	
+}
+
+.stopwatch-buttons {
+	display: flex;
+	margin-left: 20rem;
+}
+
+.wrapper {
+	color: black;
+	margin: auto;
+	width: 50%;
+	padding: 10px;
+	
+}
+
+.wrapper.active {
+	color: #fff;
+}
+
+body.active {
+	background-color: #000000ee;
+}
+
+h1,
+h2,
+h3 {
+	margin: auto;
+	width: 50%;
+	padding: 10px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+	font-size: 2em;
+	text-transform: uppercase;
+	
+}
+
+.subtimer{
+	background: rgb(20, 119, 155);
+	color: white;
+
+	width: 3rem;
+	height: 3rem;
+
+	display: grid;
+
+	text-align: center;
+	place-items: center;
+
+}
+
+
+#seconds,
+#tens {
+	font-size: 2em;
+}
+
+
+.timer-fmt {
+	background: rgb(20, 119, 155);
+	color: white;
+
+	width: 5rem;
+	height: 5rem;
+
+	display: grid;
+
+	text-align: center;
+	place-items: center;
+}
+
+.timer-fmt span {
+	display: block;
+
+	font-size: 0.85rem;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+
+button {
+	background-color: rgba(150, 71, 225, 0.313);
+	font-size: 20px;
+}
+
+button:hover {
+	background-color: blueviolet;
+}
+
+.btn {
+	position: relative;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	text-align: center;
+
+	cursor: pointer;
+}
+
+.text-mode {
+	color: black;
+}
+
+.night {
+	display: block;
+	color: black;
+}
+
+.day {
+	display: none;
+	color: #ffbf00;
+}
+
+#resetTimer{
+
+}
+
+#pauseTimer{
+
+}
+
+#startTimer
+{
+
+}
