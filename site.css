@@ -1,0 +1,152 @@
+/* Include the padding and border in an element's total width and height */
+* {
+  box-sizing: border-box;
+}
+
+h2 {
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+}
+
+/* Remove margins and padding from the list */
+ul {
+  margin-left: 25%;
+  padding: 170px;
+  top: 0%;
+  width: 50%;
+  border-radius: 40px;
+  animation-name: color_shift;
+  animation-iteration-count: infinite;
+  animation-duration: 60s;
+}
+
+/* Style the list items */
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+  -webkit-user-select: none;
+  /* Safari */
+  -ms-user-select: none;
+  /* IE 10 and IE 11 */
+  user-select: none;
+  /* Standard syntax */
+}
+
+/* When clicked on, add a background color and strike out text */
+ul li.checked {
+  color: #fff;
+  text-decoration: line-through;
+  background: #888;
+}
+
+ul li.unchecked {
+  background: #bbb;
+  color: #fff;
+}
+
+.bubble {
+  border-radius: 50px;
+  margin-left: 34%;
+  width: 30%;
+  height: 30%;
+  color: white;
+
+}
+
+/* Style the header */
+.header {
+  padding: 30px 40px;
+  width: 60%;
+  height: 20%;
+  border-radius: 50px;
+
+  margin-left: 20%;
+  background-color: #f44336;
+  color: white;
+  text-align: center;
+
+  animation-name: color_shift;
+  animation-iteration-count: infinite;
+  animation-duration: 60s;
+}
+
+/* Clear floats after the header */
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the input */
+input {
+  margin: 0;
+  border: none;
+  border-radius: 20px;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+
+#btn {
+  color: #555;
+}
+
+
+.Btn {
+  padding: 10px;
+  width: 25%;
+  background: #d9d9d9;
+  float: right;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 20px;
+
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+.addBtn:hover {
+  background-color: #bbb;
+}
+
+.deleteBtn {
+  text-align: left;
+  float: right;
+  color: #f44336;
+}
+
+
+@keyframes color_shift {
+  0% {
+    background-color: rgb(255, 0, 81);
+  }
+
+  20% {
+    background-color: purple;
+  }
+
+  40% {
+    background-color: blue;
+  }
+
+  60% {
+    background-color: green;
+  }
+
+  80% {
+    background-color: rgb(225, 255, 0);
+  }
+
+  100% {
+    background-color: orange;
+  }
+
+}
